@@ -5,21 +5,20 @@
     padding: 20px;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(255, 193, 38);
-    border-top: 1px solid rgb(255, 193, 38);
+    border-bottom: 1px solid rgb(103, 51, 163);
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 .title {
-    color: rgb(255, 193, 38);
+    color: rgba(15, 124, 213, 0.773);
     font-size: 60px;
     text-align: left;
     margin: 0;
 }
 
 .span {
-    color: darkblue;
+    color: rgb(237, 242, 82);
 }
 
 .nav {
@@ -39,7 +38,7 @@
     border-radius: 8px;
     padding: 0 1.2em;
     background-color: #131212;
-    color: brown;
+    color: rgba(15, 124, 213, 0.773);
     cursor: pointer;
     transition: border-color 0.25s;
     font-size: 20px;
@@ -52,7 +51,7 @@
     height: 40px;
     &:hover,
     &:focus {
-      border-color: rgb(255, 193, 38);
+      border-color: rgb(103, 51, 163);
     }
   }
   

@@ -5,7 +5,7 @@ const Navigation = () => {
     return (
     <div className={css.div}>
      <h1 className={css.title}>
-        React<span className={css.span}>HomeCinema</span>
+        Home<span className={css.span}>Cinema</span>
      </h1>
      <nav>
         <ul className={css.ul}>

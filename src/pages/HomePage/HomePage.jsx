@@ -23,7 +23,7 @@ const HomePage = () => {
     return (
         <div className={css.div}>
         <h2 className={css.title}>The most current movies:</h2>
-        {error ? <p>{error}</p> : <MoviesList movies={movies} />}
+        {error ? <p>{error}</p> : <MovieList movies={movies} />}
       </div>
     );
 };
