@@ -1,0 +1,14 @@
+.div {
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 48px;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(255, 193,38);
+}

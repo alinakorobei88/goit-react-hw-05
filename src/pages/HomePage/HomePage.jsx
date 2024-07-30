@@ -1,33 +1,30 @@
 import React, {useState, useEffect} from 'react';
-import axios from 'axios';
 import MovieList from '../../components/MovieList/MovieList';
+import { fetchTrendingMovies } from '../../api';
 import css from './HomePage.module.css';
 
 const HomePage = () => {
     const [movies, setMovies] = useState([]);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        const fetchTrendingMovies = async () => {
+        const getData = async() => {
             try {
-                const response = await axios.get('https://api.themoviedb.org/3/trending/movie/day', {
-                  headers: {
-                    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNWVmMTg3ZTdiYzQyZjZmMGI0NWYzMjI3NGRlYzlmOSIsInN1YiI6IjY2YThiMGZhZTc2NjZhZDU3YjVmYjg4OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9-Q8KKA4U59ZxSHXnUFuwDvxCsC-Vupbvq3dQHVC8kM',
-                  },
-    });
-    setMovies(response.data.results);
-} catch(error) {
-    console.error('Failed to fetch trending movies:', error);
-}
-};
+                const data = await fetchTrendingMovies();
+                setMovies(data);
+            } catch(error) {
+                setError('Error fetching trending movies. Please try again later.');
+            }
+        };
 
-fetchTrendingMovies();
+        getData();
     }, []);
 
     return (
-        <div className={css.container}>
-            <h1>Trending Movies</h1>
-            <MovieList movies={movies} />
-        </div>
+        <div className={css.div}>
+        <h2 className={css.title}>The most current movies:</h2>
+        {error ? <p>{error}</p> : <MoviesList movies={movies} />}
+      </div>
     );
 };
 
