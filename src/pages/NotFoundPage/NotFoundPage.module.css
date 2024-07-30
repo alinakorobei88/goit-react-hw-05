@@ -1,0 +1,11 @@
+  .notFound {
+    font-size: 48px;
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  .link {
+    font-size: 24px;
+    color: blue;
+    text-decoration: underline;
+  }
