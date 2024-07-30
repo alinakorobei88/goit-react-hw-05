@@ -1,7 +1,7 @@
 import axios, { Axios } from "axios";
 
 const API_TOKEN =
-  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NWJhM2RmMmIwMWZlMjFmNjlmOTRhNzcyZWE2NjZlOCIsIm5iZiI6MTcyMjE2NzMyNC42Mjg2MzQsInN1YiI6IjY2YTYyYjM1NzdhMGMzYmY1OTA3Y2YxZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.xCgk1g6xmNgxu-wQ6JHJYlzCnkrURJ8YvykAqRoR-Yk";
+'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNWVmMTg3ZTdiYzQyZjZmMGI0NWYzMjI3NGRlYzlmOSIsIm5iZiI6MTcyMjMzMTk0NC4zNTQzNDgsInN1YiI6IjY2YThiMGZhZTc2NjZhZDU3YjVmYjg4OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9-Q8KKA4U59ZxSHXnUFuwDvxCsC-Vupbvq3dQHVC8kM';
 const BASE_URL = "https://api.themoviedb.org/3";
 
 const fetchTrendingMovies = async () => {
