@@ -12,7 +12,7 @@
   
   .img {
     width: 320px;
-    margin-right: 20px;
+    margin-right: 650px;
   }
   .h3 {
     color: rgb(237, 242, 82);
@@ -21,30 +21,22 @@
   }
   
   .p {
-    color: rgb(237, 242, 82);
+    color: rgba(15, 124, 213, 0.773);
     margin-top: 8px;
   }
   .span {
-    color: rgb(255, 243, 73);
+    color: wheat;
   }
   
   .cast {
-    color: aqua;
+    color: rgba(15, 124, 213, 0.773);
     text-decoration: none;
     font-size: 48px;
-    &:hover,
-    &:focus {
-      text-shadow: 15px 9px 5px aqua;
-    }
   }
   .reviews {
-    color: aqua;
+    color: rgba(15, 124, 213, 0.773);
     text-decoration: none;
     font-size: 48px;
-    &:hover,
-    &:focus {
-      text-shadow: 15px 9px 5px aqua;
-    }
   }
   .nav {
     max-width: 1280px;
@@ -61,14 +53,14 @@
     border-radius: 8px;
     padding: 0 1.2em;
     background-color: #131212;
-    color: aqua;
+    color: rgba(15, 124, 213, 0.773);
     cursor: pointer;
     transition: border-color 0.25s;
     font-size: 20px;
     text-decoration: none;
     &:hover,
     &:focus {
-      border-color: aqua;
+      border-color: rgb(103, 51, 163);
     }
   }
   
